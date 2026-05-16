@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandeep Bukka | Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== LOADER ========== -->
+    <div class="loader" id="loader">
+      <div class="loader-text"><span>S</span><span>B</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket"
+          >/&gt;</span
+        >
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#strengths" class="nav-link">Strengths</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <!-- Animated background grid -->
+      <div class="hero-grid"></div>
+      <!-- Glowing orbs -->
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for Opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="glow-text">Sandeep Bukka</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="static-text">Aspiring </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-description">
+          I am passionate about building modern web applications and
+          continuously improving my development and problem-solving skills.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ri-code-box-line"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="ri-send-plane-line"></i> Get In Touch
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a
+            href="mailto:sandeepbukka22@gmail.com"
+            class="social-icon"
+            aria-label="Email"
+          >
+            <i class="ri-mail-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative code block -->
+      <div class="hero-code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">developer.js</span>
+        </div>
+        <pre
+          class="code-body"
+        ><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Sandeep Bukka"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Full Stack Developer"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>,
+    <span class="c-str">"React"</span>, <span class="c-str">"Django"</span>,
+  ],
+  <span class="c-prop">status</span>: <span class="c-str">"Open to Work 🚀"</span>,
+};</code></pre>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-wheel"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>About Me</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">Who I Am</h2>
+
+        <div class="about-grid">
+          <!-- Avatar card -->
+          <div class="about-avatar-wrap reveal">
+            <div class="avatar-card">
+              <img
+                src="my_photo.jpg"
+                alt="Sandeep Bukka"
+                style="
+                  width: 135px;
+                  height: 160px;
+                  border-radius: 14px;
+                  object-fit: cover;
+                  border: 5px solid royalblue;
+                "
+              />
+              <!--<div class="avatar-glow"></div> -->
+            </div>
+            <div class="about-tags">
+              <span class="tag">💻 Full Stack</span>
+              <span class="tag">🎯 Fresher</span>
+              <span class="tag">♟ Chess Player</span>
+              <span class="tag">🚀 Quick Learner</span>
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="about-text reveal">
+            <p class="about-intro">
+              I'm <strong>Sandeep Bukka</strong>, a Computer Science Engineering
+              graduate from Newton's Institute of Engineering, with a passion
+              for creating clean, functional, and beautiful web experiences.
+            </p>
+            <p>
+              After completing my B.Tech with a CGPA of <strong>7.17</strong>, I
+              pursued an intensive Python Full Stack Development course to
+              sharpen my practical skills across the complete web development
+              spectrum — from crafting pixel-perfect frontends to building
+              robust backends.
+            </p>
+            <p>
+              I'm now eager to channel my learning and enthusiasm into a
+              professional role where I can grow, collaborate, and contribute
+              meaningfully to impactful projects.
+            </p>
+
+            <div class="about-interests">
+              <h4>Interests & Hobbies</h4>
+              <div class="interests-list">
+                <div class="interest-item">
+                  <i class="ri-code-s-slash-line"></i>
+                  <span>Exploring Web Technologies</span>
+                </div>
+                <div class="interest-item">
+                  <i class="ri-trophy-line"></i>
+                  <span>Playing Chess</span>
+                </div>
+                <div class="interest-item">
+                  <i class="ri-lightbulb-line"></i>
+                  <span>Learning New Things</span>
+                </div>
+                <div class="interest-item">
+                  <i class="ri-article-line"></i>
+                  <span>Browsing Dev Content</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Skills</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">
+          Technologies I've worked with during my course and projects
+        </p>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category reveal">
+            <div class="skill-category-header">
+              <i class="ri-layout-3-line"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <i class="ri-html5-line"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-css3-line"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-javascript-line"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-reactjs-line"></i>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category reveal">
+            <div class="skill-category-header">
+              <i class="ri-server-line"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <i class="ri-code-s-slash-line"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-global-line"></i>
+                <span>Django</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category reveal">
+            <div class="skill-category-header">
+              <i class="ri-database-2-line"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <i class="ri-database-line"></i>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="skill-category reveal">
+            <div class="skill-category-header">
+              <i class="ri-tools-line"></i>
+              <h3>Other Skills</h3>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <i class="ri-brain-line"></i>
+                <span>Aptitude</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-puzzle-line"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="skill-pill">
+                <i class="ri-team-line"></i>
+                <span>Team Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill bars -->
+        <div class="skill-bars reveal">
+          <h3 class="bars-title">Proficiency Overview</h3>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>HTML &amp; CSS</span><span class="bar-percent">80%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>JavaScript</span><span class="bar-percent">70%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="70"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>Python</span><span class="bar-percent">72%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="72"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>React</span><span class="bar-percent">60%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="60"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>Django</span><span class="bar-percent">65%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="65"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label">
+              <span>MySQL</span><span class="bar-percent">68%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="68"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Education</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">Academic Journey</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="ri-graduation-cap-fill"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year">2021 – 2025</div>
+              <h3>Bachelor of Technology</h3>
+              <h4>Computer Science &amp; Engineering</h4>
+              <p class="timeline-inst">Newton's Institute of Engineering</p>
+              <div class="timeline-badge">CGPA: 7.17</div>
+              <p class="timeline-desc">
+                Completed my B.Tech in Computer Science Engineering, gaining
+                strong fundamentals in programming, data structures, algorithms,
+                and software development. Worked on the major project —
+                <em
+                  >Child Mortality Prediction Using Machine Learning
+                  Techniques</em
+                >.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot">
+              <i class="ri-code-box-fill"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-year">May - Dec (2025)</div>
+              <h3>Python Full Stack Development</h3>
+              <h4>Professional Course</h4>
+              <p class="timeline-inst">Logic While</p>
+              <div class="timeline-badge completed">Completed</div>
+              <p class="timeline-desc">
+                Completed an intensive full stack development course covering
+                HTML, CSS, JavaScript, React, Python, Django, and MySQL.
+                Developed hands-on mini projects and built practical development
+                skills alongside aptitude and problem-solving training.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Projects</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">
+          Real-world projects that showcase my technical skills
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon">
+                <i class="ri-bar-chart-box-line"></i>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="ri-github-line"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-type">Major Project · Group</div>
+            <h3 class="project-title">
+              Child Mortality Prediction Using Machine Learning Techniques
+            </h3>
+            <p class="project-desc">
+              A data-driven project that analyzes and predicts child mortality
+              rates using machine learning techniques. Involved data
+              preprocessing, model training, evaluation, and visualization of
+              results to derive meaningful health insights.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+              <span>Scikit-Learn</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card reveal">
+            <div class="project-glow"></div>
+            <div class="project-top">
+              <div class="project-icon">
+                <i class="ri-calendar-event-line"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Sandeep229-github/Custom-Calendar-Event-Booking-System.git" class="project-link" aria-label="View Code">
+                  <i class="ri-github-line"></i>
+                </a>
+                <a href="https://custom-calendar-event-booking-syste.vercel.app/" class="project-link" aria-label="Live Demo">
+                  <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-type">Mini Project · Individual</div>
+            <h3 class="project-title">
+              Custom Calendar & Event Booking System
+            </h3>
+            <p class="project-desc">
+              An interactive calendar and event booking web application built
+              with HTML, CSS, and JavaScript. Features include custom
+              date navigation, event creation, booking slots, and a clean
+              responsive UI without any external libraries.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STRENGTHS ========== -->
+    <section class="section strengths" id="strengths">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Strengths</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">What Drives Me</h2>
+
+        <div class="strengths-grid">
+          <div class="strength-card reveal">
+            <div class="strength-icon"><i class="ri-flashlight-line"></i></div>
+            <h3>Quick Learner</h3>
+            <p>
+              I adapt fast to new frameworks, tools, and technologies — turning
+              unfamiliar into fluent in record time.
+            </p>
+          </div>
+
+          <div class="strength-card reveal">
+            <div class="strength-icon"><i class="ri-puzzle-2-line"></i></div>
+            <h3>Problem Solver</h3>
+            <p>
+              I enjoy dissecting complex challenges and engineering elegant,
+              practical solutions step by step.
+            </p>
+          </div>
+
+          <div class="strength-card reveal">
+            <div class="strength-icon"><i class="ri-loop-right-line"></i></div>
+            <h3>Adaptable</h3>
+            <p>
+              Comfortable embracing change and pivoting to new technologies,
+              environments, and working styles.
+            </p>
+          </div>
+
+          <div class="strength-card reveal">
+            <div class="strength-icon"><i class="ri-mind-map"></i></div>
+            <h3>Calm &amp; Decisive</h3>
+            <p>
+              I approach decisions with clarity and composure, especially under
+              pressure or in uncertain situations.
+            </p>
+          </div>
+
+          <div class="strength-card reveal">
+            <div class="strength-icon"><i class="ri-team-line"></i></div>
+            <h3>Team Player</h3>
+            <p>
+              Collaborative at heart — I communicate openly, support teammates,
+              and thrive in a group setting.
+            </p>
+          </div>
+
+          <div class="strength-card reveal">
+            <div class="strength-icon">
+              <i class="ri-arrow-up-circle-line"></i>
+            </div>
+            <h3>Self-Motivated</h3>
+            <p>
+              Committed to continuous self-improvement and staying current with
+              industry trends and best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME ========== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Resume</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">Download My CV</h2>
+
+        <div class="resume-card reveal">
+          <div class="resume-glow"></div>
+          <div class="resume-left">
+            <div class="resume-file-icon">
+              <i class="ri-file-pdf-2-line"></i>
+            </div>
+            <div class="resume-info">
+              <h3>Sandeep_Bukka_Resume.pdf</h3>
+              <p>Full Stack Developer · Fresher · B.Tech CSE</p>
+              <div class="resume-meta">
+                <span><i class="ri-calendar-line"></i> 2024</span>
+                <span><i class="ri-file-line"></i> PDF Format</span>
+              </div>
+            </div>
+          </div>
+          <a
+            href="Bukka_Sandeep_resume.pdf"
+            class="btn btn-primary resume-btn"
+            download
+          >
+            <i class="ri-download-2-line"></i>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Quick Summary -->
+        <div class="resume-highlights">
+          <div class="highlight-item reveal">
+            <div class="highlight-num">7.17</div>
+            <div class="highlight-label">CGPA</div>
+          </div>
+          <div class="highlight-divider"></div>
+          <div class="highlight-item reveal">
+            <div class="highlight-num">7+</div>
+            <div class="highlight-label">Technologies</div>
+          </div>
+          <div class="highlight-divider"></div>
+          <div class="highlight-item reveal">
+            <div class="highlight-num">2</div>
+            <div class="highlight-label">Projects</div>
+          </div>
+          <div class="highlight-divider"></div>
+          <div class="highlight-item reveal">
+            <div class="highlight-num">1</div>
+            <div class="highlight-label">Degree</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Contact</span>
+          <span class="label-line"></span>
+        </div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          Have an opportunity or just want to say hi? I'd love to hear from you.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info reveal">
+            <div class="contact-info-card">
+              <i class="ri-mail-send-line"></i>
+              <div>
+                <h4>Email</h4>
+                <p>sandeepbukka22@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <i class="ri-phone-line"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 90528 00382</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Macherla, Andhra Pradesh, India</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <i class="ri-briefcase-line"></i>
+              <div>
+                <h4>Status</h4>
+                <p>Open to Work — Fresher Roles</p>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-socials">
+              <a
+                href="https://github.com/Sandeep229-github"
+                class="contact-social-btn"
+              >
+                <i class="ri-github-fill"></i> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sandeepbukka922/"
+                class="contact-social-btn"
+              >
+                <i class="ri-linkedin-box-fill"></i> LinkedIn
+              </a>
+              <a
+                href="mailto:sandeepbukka22@gmail.com"
+                class="contact-social-btn"
+              >
+                <i class="ri-mail-fill"></i> Gmail
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap reveal">
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Job Opportunity / Collaboration"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Tell me about the opportunity..."
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary form-submit"
+                id="formSubmit"
+                type="button"
+              >
+                <i class="ri-send-plane-fill"></i> Send Message
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="ri-checkbox-circle-line"></i> Message sent! I'll get
+                back to you soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer-glow"></div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>SB<span class="logo-bracket"
+              >/&gt;</span
+            >
+          </div>
+          <p class="footer-tagline">Building the web, one line at a time.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ri-linkedin-box-fill"></i
+            ></a>
+            <a href="mailto:sandeepbukka22@gmail.com" aria-label="Email"
+              ><i class="ri-mail-fill"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <p>
+            © 2024 <strong>Sandeep Bukka</strong>. Crafted with
+            <span class="heart">♥</span> and lots of coffee.
+          </p>
+          <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <i class="ri-arrow-up-line"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
